@@ -2,8 +2,9 @@
   "opcode": {
     "sparse-switch": 1,
     "const-string": 10,
-    "if-eqz": 10,
-    "Ljava/lang/String;->equals": 10
+    "invoke-virtual": 10,
+    "move-result": 10,
+    "if-eqz": 10
   },
   "api": {
     "Ljava/lang/String;->equals(Ljava/lang/Object;)Z": 10
