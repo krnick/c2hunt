@@ -1,6 +1,5 @@
 {
   "opcode": {
-    "new-instance": 1,
     "const-string": 10,
     "invoke-virtual": 10
   },
