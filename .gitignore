@@ -1,3 +1,7 @@
+.idea/
+androguard.db
+androguard.db-shm
+androguard.db-wal
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
