@@ -1,0 +1,8 @@
+{
+  "opcode": {
+    "sput-object": 20,
+    "const-string": 20
+  },
+  "example": "https://tria.ge/250516-h186asbp2s",
+  "family": "nexus"
+}

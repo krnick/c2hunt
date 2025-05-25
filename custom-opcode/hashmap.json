@@ -1,0 +1,10 @@
+{
+  "opcode": {
+    "new-instance": 1,
+    "const-string": 10,
+    "invoke-virtual": 10
+  },
+  "api": {
+    "Ljava/util/HashMap;->put(Ljava/lang/Object; Ljava/lang/Object;)Ljava/lang/Object;": 10
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "opcode": {
+    "new-array": 1,
+    "aput-object": 20,
+    "const-string": 20
+  },
+  "example": "https://tria.ge/250207-j5798svlgs",
+  "family": "copybara"
+}

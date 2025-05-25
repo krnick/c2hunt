@@ -1,0 +1,11 @@
+{
+  "opcode": {
+    "invoke-virtual": 10,
+    "move-result-object": 10,
+    "iput-object": 10,
+    "const-string": 10
+  },
+  "example": "https://tria.ge/250117-1xf98atrcz",
+  "family": "cerberus",
+  "note": "rc4 with base64, key is the substring of the first 12 byte from cipherText"
+}

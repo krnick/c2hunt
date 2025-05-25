@@ -1,0 +1,9 @@
+{
+  "opcode": {
+    "const-string": 10,
+    "if-eqz": 10,
+    "Ljava/lang/String;->equals": 10
+  },
+  "example": "https://tria.ge/250207-1w1mgaznbs",
+  "family": "octo"
+}
