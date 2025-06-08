@@ -31,7 +31,7 @@ def cli(file: str, opcode: str, print_smali: bool) -> None:
         get_smali(file)
     else:
         click.secho(f"[INFO] Analyzing: {file}", fg="cyan")
-        click.secho(f"[INFO] Using Opcode & APIs definition: {opcode}", fg="cyan")
+        click.secho(f"[INFO] Using OPcode & Android API Pattern Rule: {opcode}", fg="cyan")
         analyze_target(file, opcode)
 
 

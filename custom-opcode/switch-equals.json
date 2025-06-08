@@ -8,7 +8,5 @@
   },
   "api": {
     "Ljava/lang/String;->equals(Ljava/lang/Object;)Z": 10
-  },
-  "example": "https://tria.ge/240406-ebjybsaf53",
-  "family": "ahrat"
+  }
 }
