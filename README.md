@@ -203,3 +203,17 @@ stopCam
 updateApk
 ```
 
+
+```mermaid
+flowchart TD
+    A[Input APK/DEX file] --> B[Extract all functions and exclude system libraries, Android APIs, and third-party libraries]
+    B --> C[Extract Smali instructions for each function]
+    C --> D[Match each function against opcode and Android API pattern rules]
+    D --> E{Matches any pattern rule?}
+    E -- No --> F[Continue to next function]
+    E -- Yes --> G{≥ threshold?}
+    G -- No --> F
+    G -- Yes --> H[Flag as potential C2-command-containing function and extract all string constants within the function]
+    H --> I[Output flagged functions and extracted strings]
+```
+
