@@ -5,12 +5,12 @@ name = "pypi"
 
 [packages]
 androguard = "*"
-black = "*"
 click = "*"
 c2hunt = { path = ".", editable = true }
 prettytable = "*"
 
 [dev-packages]
+black = "*"
 
 [requires]
 python_version = "3.13"
