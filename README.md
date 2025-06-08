@@ -82,3 +82,124 @@ c2hunt -f target.apk -p
 
 - By default, C2Hunt scans the specified APK or DEX file for C2 commands using the given opcode definition file.
 - If the `--print-smali` flag is provided, it will only print all smali methods without analysis.
+
+## Example Output
+
+```
+(c2hunt) bash-3.2$ c2hunt -f malware_family/tgtoxic.dex -o custom-opcode/switch-equals.json
+
+  ____ ____  _                 _   
+ / ___|___ \| |__  _   _ _ __ | |_ 
+| |     __) | '_ \| | | | '_ \| __|
+| |___ / __/| | | | |_| | | | | |_ 
+ \____|_____|_| |_|\__,_|_| |_|\__|
+Hunting potential C2 commands in Android malware via Smali string comparison and control flow analysis
+
+[INFO] Analyzing: malware_family/tgtoxic.dex
+[INFO] Using OPcode & Android API Pattern Rule: custom-opcode/switch-equals.json
+[INFO] Opcode & APIs threshold: {'sparse-switch': 1, 'const-string': 10, 'invoke-virtual': 10, 'move-result': 10, 'if-eqz': 10, 'Ljava/lang/String;->equals(Ljava/lang/Object;)Z': 10}
+
+[+] The following functions potentially contain C2 commands:
+
+Function: Lcom/example/mysoul/KszahaVmkrjij$UoO1i1liii0; call ([Ljava/lang/Object;)V
+Opcode & APIs count: {'sparse-switch': 2, 'const-string': 219, 'invoke-virtual': 467, 'move-result': 446, 'if-eqz': 148, 'Ljava/lang/String;->equals(Ljava/lang/Object;)Z': 100}
+=====[ C2HUNT RESULT ]================================================================================
+flag
+homepage
+action
+screen_relay
+walletList
+installPermission
+gestureB
+requestfloaty
+admLockRule
+swipePwdScreenOff
+inputSend
+realtimeSet
+showShortcuts
+reqPerList
+wallpaper
+autoRequestPerm
+readSmsList
+autoBoot
+backstage
+setDebugMode
+startCam
+startApk
+catAllViewSwitch
+permissionB
+closeEnv
+installApk
+lockScreen
+setWakeup
+doNotDisturb
+capture
+callAcc
+touchMove
+touchDown
+logMode
+gestureCapture
+gestureUnlock
+setDebugOn
+setHideMode
+swipePwdScreenOn
+power
+light
+black
+Awake
+openIntent
+home
+back
+adm
+sendAlert
+callAppSetting
+init_data
+screenshot
+readContactList
+permission
+capturePic
+clickPoint
+wakeup
+clickInput
+update
+setCam
+recent
+reConn
+lightT
+takeScreen
+touchUp
+admLock
+setAppStyle
+realtimeOnOff
+antiDeleteOff
+fetchIcon
+openUrl
+uninstallApk
+readAlbumThumbnail
+clickB
+reOpenMe
+blackB
+rightClick
+admSet
+admPwd
+reqScreenPermission
+googleAuth
+cancelAwake
+releaseScreenCapture
+closeProtect
+readAlbumList
+readAlbumLast
+ask_relay
+antiDeleteOn
+cancelWakeup
+transparent
+setDebugOff
+restartApp
+hideShortcuts
+stopHereTest
+restartSc
+restartMe
+stopCam
+updateApk
+```
+
