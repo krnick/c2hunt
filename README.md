@@ -13,16 +13,24 @@ C2Hunt is a command-line tool for analyzing Android APK or DEX files to detect C
 
 ## Features
 
-- Analyze Android APK/DEX files for C2 commands hanlding structures
+- Analyze Android APK/DEX files for C2 commands handling structures
 - Print all smali methods from the target APK/DEX
 - Support for custom opcode/API definition in JSON format
 
 ## Installation
 
-Install the required dependencies (for example, using `pip`):
+You can use either `pip` or `pipenv` to install dependencies.
+
+### Using pip
 
 ```bash
 pip install -r requirements.txt
+```
+
+### Using pipenv
+
+```bash
+pipenv install
 ```
 
 ## Usage
