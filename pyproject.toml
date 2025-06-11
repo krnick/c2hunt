@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "c2hunt"
+version = "0.0.1"
+description = "Hunting Potential C2 Commands in Android Malware via Smali String Comparison and Control Flow Analysis"
+authors = [
+    { name = "JunWei Song", email = "junwei.song1994@email.com" }
+]
+readme = "README.md"
+license = { file = "LICENSE" }
+requires-python = ">=3.10"
+dependencies = [
+    "click",
+    "loguru",
+    "androguard",
+    "black"
+]
+
+[project.scripts]
+c2hunt = "c2hunt.cli:cli"
