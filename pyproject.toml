@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "c2hunt"
-version = "0.0.1"
+version = "0.0.2"
 description = "Hunting Potential C2 Commands in Android Malware via Smali String Comparison and Control Flow Analysis"
 authors = [
     { name = "JunWei Song", email = "junwei.song1994@email.com" }

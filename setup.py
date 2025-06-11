@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name="c2hunt",
-    version="0.0.1",
+    version="0.0.2",
     description="Hunting Potential C2 Commands in Android Malware via Smali String Comparison and Control Flow Analysis",
     author="JunWei Song",
     author_email="junwei.song1994@email.com",
