@@ -13,7 +13,7 @@ setup(
     author_email="junwei.song1994@email.com",
     packages=find_packages(),
     python_requires=">=3.10",
-    install_requires=["click", "loguru", "androguard", "black"],
+    install_requires=["click", "loguru", "androguard", "prettytable"],
     entry_points={
         "console_scripts": [
             "c2hunt=c2hunt.cli:cli",

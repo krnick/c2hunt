@@ -16,7 +16,7 @@ dependencies = [
     "click",
     "loguru",
     "androguard",
-    "black"
+    "prettytable"
 ]
 
 [project.scripts]
