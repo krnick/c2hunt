@@ -1,0 +1,9 @@
+{
+   "opcode":{
+      "iput-object":10,
+      "const-string":10
+   },
+   "example":"https://tria.ge/250604-1wsxmawqz2",
+   "sha256":"cbfe8e5b2021bfb5d3f5941b849cba4c4c5ebc13983c914e73d8bfcc78075e27",
+   "family":"crocodilus"
+}
