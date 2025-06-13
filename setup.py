@@ -10,7 +10,7 @@ setup(
     long_description=long_description,
     long_description_content_type="text/markdown",
     author="JunWei Song",
-    author_email="junwei.song1994@email.com",
+    author_email="junwei.song1994@gmail.com",
     packages=find_packages(),
     python_requires=">=3.10",
     install_requires=["click", "loguru", "androguard", "prettytable"],
