@@ -1,5 +1,7 @@
 {
   "opcode": {
+    "iget-object": 1,
+    "new-instance": 10,
     "const-string": 10,
     "invoke-virtual": 10
   },
