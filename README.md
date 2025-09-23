@@ -24,13 +24,15 @@ You can use either `pip` or `pipenv` to install dependencies.
 ### Using pip
 
 ```bash
-pip install -r requirements.txt
+pip install c2hunt
 ```
 
 ### Using pipenv
 
 ```bash
 pipenv install
+
+pipenv shell
 ```
 
 ## Usage
@@ -63,19 +65,19 @@ c2hunt -f <APK_OR_DEX_PATH> [-o <OPCODE_JSON>] [-p]
 #### Analyze an APK with the default opcode file
 
 ```bash
-c2hunt -f target.apk
+c2hunt -f malware_family/tgtoxic.dex
 ```
 
 #### Analyze a DEX file with a custom opcode file
 
 ```bash
-c2hunt -f classes.dex -o my-opcodes.json
+c2hunt -f malware_family/tgtoxic.dex -o custom-opcode/switch-equals.json
 ```
 
 #### Print all smali methods (no analysis)
 
 ```bash
-c2hunt -f target.apk -p
+c2hunt -f malware_family/tgtoxic.dex -p
 ```
 
 ## How It Works
